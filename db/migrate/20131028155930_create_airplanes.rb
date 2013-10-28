@@ -1,9 +1,9 @@
 class CreateAirplanes < ActiveRecord::Migration
   def change
-    create_table(:elephants) do |t|
+    create_table(:airplanes) do |t|
       t.string :manufacturer
       t.string :year
-      t.registration :registration
+      t.string :registration
     end
   end
 end
