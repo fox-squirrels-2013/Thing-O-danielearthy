@@ -1,5 +1,10 @@
 require 'rubygems'
 require 'sinatra'
+require 'active_record'
+require_relative './app/models/airplane'
+
+ActiveRecord::Base.establish_connection(adapter: 'postgresql')
+
 
 get '/' do
   'This Thing-o app will be about airplanes, specifically a fleet management tool for flight schools.
