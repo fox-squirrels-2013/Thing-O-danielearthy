@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-require 'sinatra/activerecord/rake'	
-require './myapp'
-=======
 require 'rake'
 require 'rspec/core/rake_task'
 
@@ -88,7 +84,6 @@ namespace :generate do
   end
 
 end
->>>>>>> master
 
 namespace :db do
   desc "Drop, create, and migrate the database"
@@ -96,12 +91,10 @@ namespace :db do
 
   desc "Create the databases at #{DB_NAME}"
   task :create do
-<<<<<<< HEAD
-    `createdb fleetfarm`
-=======
+
     puts "Creating development and test databases if they don't exist..."
     system("createdb #{APP_NAME}_development && createdb #{APP_NAME}_test")
->>>>>>> master
+
   end
 
   desc "Drop the database at #{DB_NAME}"
