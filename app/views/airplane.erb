@@ -1,0 +1,8 @@
+<p><%=params[:id]%><p>
+
+
+<form name="input" action="/<%=params[:id]%>" method="post">
+<textarea type="text" name="name"><%=@plane.name%></textarea>
+<textarea type="text" name="year"><%=@plane.year%></textarea>
+<input type="submit" value="Submit">
+</form>
