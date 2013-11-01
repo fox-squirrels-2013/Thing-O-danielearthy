@@ -16,7 +16,11 @@ ActiveRecord::Schema.define(version: 20131028155930) do
   enable_extension "plpgsql"
 
   create_table "airplanes", force: true do |t|
+<<<<<<< HEAD
     t.string "manufacturer"
+=======
+    t.string "name"
+>>>>>>> master
     t.string "year"
     t.string "registration"
   end
